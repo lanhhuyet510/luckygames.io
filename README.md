@@ -5,7 +5,12 @@
 3. pip3 install secrets (Trên windows sẽ bị fail ở đoạn cuối nhưng vẫn chạy đc)
 4. Sửa coin name muốn chơi trong code
 5. Sửa HEADER trong code (Login => F12 => Refresh => Bet 1 bet bất kỳ => Click vào request luckygames.io/play/ => Lấy cookie và User-Agent)
+
+Update: một số acc cần sửa cả "Acept-language" (cách lấy tương tự) 
+
 Update: sửa 'hash' ở dòng 30 và 60 trong request (cách làm như trên) 
+
+
 6. chạy: ``python3 dice45_io-bak.py &``
 
 Có thể chạy bước 6 nhiều lần cho nhanh (tối đa ~10)
