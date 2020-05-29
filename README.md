@@ -3,7 +3,7 @@
 1. Install python3: https://www.python.org/downloads/ 
 2. pip3 install requests pyOpenSSL
 3. pip3 install secrets (Trên windows sẽ bị fail ở đoạn cuối nhưng vẫn chạy đc)
-4. Sửa coin name muốn chơi trong code
+4. Sửa coin name muốn chơi trong code, sửa target profit phù hợp
 5. Sửa HEADER trong code (Login => F12 => Refresh => Bet 1 bet bất kỳ => Click vào request luckygames.io/play/ => Lấy cookie và User-Agent)
 
 Update: một số acc cần sửa cả "Acept-language" (cách lấy tương tự) 
@@ -17,4 +17,4 @@ Có thể chạy bước 6 nhiều lần cho nhanh (tối đa ~10)
 
 7. Bonus: Sửa trong code biến DOMAIN sang cc, cx, ws và chạy lại bước 6 thêm 10 lần => 1 lúc chạy được 40 bot, mạng khoẻ thì cho lên 100 bot cũng được
 
-8. Chú ý: sau 5k bet hoặc đạt targe profit tool sẽ tự dừng, cần chạy lại bước 6
+8. Chú ý: sau 5k bet(tránh trường hợp chạy quá lâu)  hoặc đạt targe profit tool sẽ tự dừng, cần chạy lại bước 6
