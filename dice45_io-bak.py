@@ -27,7 +27,7 @@ def randomSeed():
     global HEADERS
     try:
         API_ENDPOINT = "https://luckygames." + DOMAIN + "/request/"
-        DATA = {'action':'randomizeSeed', 'hash' : '1d056abee9c79faee5e34ef6977b2510468ee513', 'previousSeedHash':''}
+        DATA = {'action':'randomizeSeed', 'hash' : 'YOUR HASH HERE', 'previousSeedHash':''}
         r = requests.post(url = API_ENDPOINT, headers = HEADERS, data = DATA, timeout = 10)
         serverSeedHash = json.loads(r.text).get('serverSeedHash','null')
     except:
@@ -57,7 +57,7 @@ def doBet(coinName, betAmount, prediction, direction):
         if TOTAL_BET == 0:
             serverSeedHash = randomSeed()
         API_ENDPOINT = "https://luckygames." + DOMAIN + "/play/"
-        DATA = {'game':'dice', 'coin' : coinName, 'betAmount': betAmount, 'prediction':prediction, 'direction':direction,'clientSeed':clientSeed, 'serverSeedHash': serverSeedHash, 'hash':'1d056abee9c79faee5e34ef6977b2510468ee513'}
+        DATA = {'game':'dice', 'coin' : coinName, 'betAmount': betAmount, 'prediction':prediction, 'direction':direction,'clientSeed':clientSeed, 'serverSeedHash': serverSeedHash, 'hash':'YOUR HASH HERE'}
         r = requests.post(url = API_ENDPOINT, headers = HEADERS, data = DATA, timeout = 10)
         r_response = json.loads(r.text)
         _resultNumber = r_response.get('resultNumber','null')
