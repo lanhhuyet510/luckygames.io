@@ -16,3 +16,5 @@ Update: sửa 'hash' ở dòng 30 và 60 trong request (cách làm như trên)
 Có thể chạy bước 6 nhiều lần cho nhanh (tối đa ~10)
 
 7. Bonus: Sửa trong code biến DOMAIN sang cc, cx, ws và chạy lại bước 6 thêm 10 lần => 1 lúc chạy được 40 bot, mạng khoẻ thì cho lên 100 bot cũng được
+
+8. Chú ý: sau 5k bet hoặc đạt targe profit tool sẽ tự dừng, cần chạy lại bước 6
